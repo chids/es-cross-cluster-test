@@ -2,6 +2,8 @@
 
 This is a hack.
 
+----
+
 Requires Elasticsearch 5.3, has only been tested with `brew install elasticsearch` on OS X.
 
 1. `start.sh`
@@ -9,3 +11,7 @@ Requires Elasticsearch 5.3, has only been tested with `brew install elasticsearc
 3. `curl -v -XPOST http://127.0.0.1:9320/data/foo -H"Content-Type: application/json" -d'{"value": "bar"}'`
 4. `http://127.0.0.1:9340/local:data,remote:data/_search`
 5. Profit...ish.
+
+----
+
+h/t to [Johan Andersson](https://github.com/anderssonjohan) for pointing me to https://www.elastic.co/guide/en/elasticsearch/reference/5.3/modules-cross-cluster-search.html in the first place.
